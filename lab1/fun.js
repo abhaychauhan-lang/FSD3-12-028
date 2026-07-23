@@ -26,3 +26,10 @@ function digitToWord(digit){
     }
 }     
 console.log(digitToWord(5)); // Output: five
+
+//2nd method using array
+const digitToWordArrow = (digit) => {
+    const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    return words[digit] || "Invalid digit";
+}
+console.log(digitToWordArrow(5)); // Output: five
