@@ -1,9 +1,15 @@
-// We use in memory database for this lab, so we will store the users in an array
+// we use in memory database
 let users = [
-    { id: 1, name: "Abhay Pratap Singh",mob:"1234567890", email: "abhaychauhan6111@gmail.com" },
-    { id: 2, name: "John Doe", mob:"9876543210", email: "johndoe@example.com" }
-];
+    {id:1,name:'Amit Sharma',mob:'98345xxxxx',email:'amit.example@exam.com'},
+    {id:2,name:'Monika Verma',mob:'92345xxxxx',email:'moni.example@exam.com'},
+]
 
-let nextId = 3; // Next ID to be assigned to a new user
+let nextId = 3;
 
 export const getUsers = () => users;
+
+export const addUser = (user) => {
+    user.id = nextId++;
+    users.push(user);
+    return user;
+};
