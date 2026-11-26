@@ -41,3 +41,7 @@ cd backend
     console.log("Server is running on port 3000");
     });
     ```
+
+11. express supports middleware,when we execute some functions before server execution then we use middleware.
+
+12. app.use always applied to insert any middleware
