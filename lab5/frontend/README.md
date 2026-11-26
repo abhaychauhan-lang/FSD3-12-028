@@ -11,3 +11,12 @@
 4. component can be called as html tags
    >eg. <App/> <Book/> , <User/> <Product/> <ProductList/>
 5. must be closed during rendering
+
+# React Import/Export
+1. App.jsx
+ > Any component
+ - must start with capital letter
+ - extension must be .jsx
+ - must return some html/other component content
+ - it may be exported
+ - we can import only if that particular component is exported
