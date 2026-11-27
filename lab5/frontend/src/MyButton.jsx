@@ -1,20 +1,25 @@
-import React from 'react'
+import { useState } from 'react';
 
 const MyButton = () => {
-    let click = 0;
+    const [count, setCount] = useState(0);
 
-    function handleClick(){
-        alert("button clicked");
-        click++;
-        console.log("Button clicked:", click);
+    function handleIncrement() {
+        setCount(count + 1);
     }
 
-  return (
-    <div>
-        <p>Click on the button</p>
-        <h2>Button Clicked :{click}</h2>
-        <button onClick={handleClick}>Click me</button>
-    </div>
-  );
+    function handleDecrement() {
+        setCount(count - 1);
+    }
+
+    return (
+        <div>
+            <p>Click on the button</p>
+            <h2>Button Clicked: {count}</h2>
+
+            <button onClick={handleIncrement}>Increase</button>
+            <button onClick={handleDecrement}>Decrease</button>
+        </div>
+    );
 };
-export default MyButton
+
+export default MyButton;

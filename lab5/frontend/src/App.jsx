@@ -48,6 +48,8 @@ function App() {
   return (
     <>
     <MyButton/> 
+    <br />
+    <MyButton/>
     </>
   );
 }
